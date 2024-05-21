@@ -7,23 +7,19 @@ $negativos = 0;
 $positivos = 0;
 $pares = 0;
 $impares = 0;
-$x = 0;
 
 foreach ($digitos as $seq){
-	$num = $digitos[$x];
-	
-	if($num < 0){
+	if($seq < 0){
 		$negativos++;
 	}else{
 		$positivos++;
 	}
 	
-	if($num % 2 == 0){
+	if($seq % 2 == 0){
 		$pares++;
 	}else{
 		$impares++;
 	}
-	$x++;
 }
 
 echo "O array tem $negativos números negativos</br>";
