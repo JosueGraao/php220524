@@ -14,8 +14,10 @@ $media = $soma / 10;
 
 $MaxNota = max($notas);
 
+$mAluno = array_search(max($notas), $notas);
+
 echo "</br>A média desta classe é $media</br>";
 
-echo "</br>A nota mais alta desta classe foi $MaxNota"; 
+echo "</br>O aluno com nota mais alta desta classe foi $alunos[$mAluno]";
 
  ?>
