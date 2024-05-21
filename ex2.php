@@ -7,8 +7,9 @@ $negativos = 0;
 $positivos = 0;
 $pares = 0;
 $impares = 0;
+$x = 0;
 
-for ($x = 0;$x <= 9;$x++){
+foreach ($digitos as $seq){
 	$num = $digitos[$x];
 	
 	if($num < 0){
@@ -22,6 +23,7 @@ for ($x = 0;$x <= 9;$x++){
 	}else{
 		$impares++;
 	}
+	$x++;
 }
 
 echo "O array tem $negativos números negativos</br>";
